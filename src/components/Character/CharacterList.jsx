@@ -6,9 +6,9 @@ function CharacterList({ characters }) {
     return (
         <ul aria-label= 'characters'>
             {characters.map((character) => (
-                <li key={character.id}>
+                <li key={character._id}>
                     <Character
-                    id={character.id}
+                    id={character._id}
                     name={character.name}
                     image={character.image}
                     />

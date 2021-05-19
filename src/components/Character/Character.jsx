@@ -10,7 +10,7 @@ function Character ({id, name, image}) {
     }
     return (
         <div>
-            <image src = {image} alt = {name} onClick= {handleClick}/>
+            <img src = {image} alt = {name} onClick= {handleClick}/>
             <p>{name}</p>
         </div>
     )
