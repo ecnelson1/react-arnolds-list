@@ -6,13 +6,13 @@ function Character ({id, name, image}) {
     let history = useHistory();
     const handleClick = () => {
         history.push(`/${id}`)
-        history.go(1`/${id}`)
+        history.go(`/${id}`)
     }
     return (
-        <div>
+        <figure aria-label='character'>
             <img src = {image} alt = {name} onClick= {handleClick}/>
-            <p>{name}</p>
-        </div>
+            <figcaption>{name}</figcaption>
+        </figure>
     )
 }
 Character.propTypes = {
